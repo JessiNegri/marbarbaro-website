@@ -1,21 +1,20 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
-@use '../abstracts/maps' as mp;
 @use 'sass:color';
 
-/* Estilo general */
-/*font-family: 'Dancing Script', cursive;*/
+/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
     background-color: color.adjust(v.$color-verde, $lightness: -10%);
-    .intro {
-        @include m.section-flex;
-    }
-    .taller {
-        @include m.section-flex;
-    }
+    overflow-x: hidden;
 }
 
+main {
+    width: 100%;
+}
 
-
+.intro,
+.taller {
+    @include m.section-flex;
+}

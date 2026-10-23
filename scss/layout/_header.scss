@@ -1,30 +1,41 @@
 @use '../abstracts/variables' as v;
 
 /* Header y navegación */
-.logo {
-    display: flex;
-    align-items: center;
-
-    img {
-    width: 100px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 50%;
-    margin: 10px;
-    transition: width 0.3s ease;
-    }
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #99bc85;
+    background-color: v.$color-verde;
     padding: 15px 30px;
     position: relative;
     flex-wrap: wrap;
     z-index: 1000;
 
+    /* Logo */
+    .logo {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 50%;
+            margin: 10px;
+            display: block;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    /* Navegación principal */
     .nav-links {
         list-style: none;
         display: flex;
@@ -32,158 +43,167 @@
         justify-content: center;
         align-items: center;
         flex: 1;
+        margin: 0;
+        padding: 0;
 
         li {
             a {
-                color: #333;
-            text-decoration: none;
-            padding: 10px;
-            font-size: 16px;
-            transition: all 0.3s ease;
+                color: v.$color-text;
+                text-decoration: none;
+                padding: 10px;
+                font-size: 16px;
+                transition: color 0.3s ease;
 
-            &:hover {
-                font-weight: bolder;
-                color: #faf1e6;
+                &:hover {
+                    color: v.$color-background-light;
                 }
             }
         }
     }
-}
 
-.submenu-container {
-    position: relative;
+    /* Submenú de Tienda */
+    .submenu-container {
+        position: relative;
 
-    &:hover .submenu {
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-    }
+        &:hover {
+            .submenu {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-    &.open .submenu {
-        display: block;
-        visibility: visible;
-        opacity: 1;
-        transform: translateY(0);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-    }
+        .submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 180px;
+            list-style: none;
+            background-color: v.$color-verde;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 8px 0;
+            margin: 0;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            z-index: 1000;
 
-    .submenu {
-        display: block;
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(-10px);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: transparent;
-        list-style: none;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        padding: 8px 0;
-        margin: 0;
-        z-index: 1000;
+            li {
+                a {
+                    display: block;
+                    padding: 8px 15px;
+                    color: v.$color-text;
+                    font-size: 14px;
+                    white-space: nowrap;
 
-        li {
-            a {
-                color: #333;
-                font-size: 14px;
-                display: block;
-                padding: 6px 0;
-                transition: font-weight 0.3s;
-
-                &:hover {
-                    color: #fdfaf6;
-                    font-weight: bold;
-                }   
+                    &:hover {
+                        color: v.$color-background-light;
+                    }
+                }
             }
         }
     }
-}
 
-#menu-hamburguesa {
-    display: none;
-}
-
-.menu-icon {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 5px;
-    margin-left: auto;
-    z-index: 1100;
-
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #333;
+    /* Menú hamburguesa */
+    #menu-hamburguesa {
+        display: none;
     }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
-    }
-
-    .logo {
-        align-self: flex-start;
-        margin: 10px 0;
-
-        img {
-            width: 90px;
-        }
-    } 
 
     .menu-icon {
-        display: flex;
-        justify-content: center;
-        margin: 10px 0;
-    }
-
-    .nav-links {
+        display: none;
         flex-direction: column;
-        align-items: flex-start;
-        position: static;
-        background-color: #99bc85;
-        padding: 20px;
-        display: none;
-        width: 100%;
-    }
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+        margin-left: auto;
+        z-index: 1100;
 
-    #menu-hamburguesa:checked + .menu-icon + .nav-links {
-        display: flex;
-    }
-
-    .submenu-container {
-    .submenu {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-
-        li {
-            a {
-                padding: 6px 0;
-            }
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: v.$color-text;
+            border-radius: 2px;
+            transition: transform 0.3s ease;
         }
     }
 
-    &.open .submenu {
-        display: block;
-    }
-}
+    /* Tablet y mobile */
+    @media (max-width: 768px) {
+        padding: 10px 20px;
 
-    #menu-hamburguesa:checked~ 
-    .nav-links .submenu-container.open .submenu {
-        display: block;
-    }
-}
+        .logo {
+            img {
+                width: 90px;
+                margin: 5px;
+            }
+        }
 
-@media (max-width: 480px) {
-    .logo img {
-        width: 70px;
+        .menu-icon {
+            display: flex;
+        }
+
+        .nav-links {
+            display: none;
+            flex-basis: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+            width: 100%;
+            background-color: v.$color-verde;
+            padding: 20px 0;
+
+            li {
+                width: 100%;
+
+                a {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .submenu-container {
+                .submenu {
+                    position: static;
+                    display: block;
+                    visibility: visible;
+                    opacity: 1;
+                    transform: none;
+                    min-width: 0;
+                    width: 100%;
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: none;
+                    padding: 0 0 0 20px;
+
+                    li {
+                        a {
+                            padding: 6px 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #menu-hamburguesa:checked + .menu-icon + .nav-links {
+            display: flex;
+        }
+    }
+
+    /* Mobile pequeño */
+    @media (max-width: 480px) {
+        padding: 10px 15px;
+
+        .logo {
+            img {
+                width: 70px;
+            }
+        }
+
+        .nav-links {
+            padding: 15px 0;
+        }
     }
 }

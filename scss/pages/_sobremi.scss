@@ -1,62 +1,99 @@
-.sobremi {
-    background-color: #fdfaf6;
-    color: #333;
-    padding: 20px 0;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+/* Página Sobre mí */
+.sobre-mi {
     width: 100%;
-    overflow-x: hidden;
-    
-    .container-sobremi {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .sobremi {
         width: 100%;
-        box-sizing: border-box;
-        padding: 0 20px;
-        
-        .section-sobremi {
+        padding: 20px 0;
+        background-color: v.$color-light;
+        color: v.$color-text;
+        overflow-x: hidden;
+
+        .container-sobremi {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-between;
             width: 100%;
-            max-width: 1200px;
-            margin-bottom: 40px;
-            gap: 20px;
-            
-            .text-sobremi {
-                width: 45%;
-                font-size: 15px;
-                text-align: center;
-                margin: 15px;
-            }
-            
-            .image-sobremi {
-                width: 55%;
-                margin-top: 20px;
-                
-                img {
-                    width: 100%;
-                    border-radius: 10px;
-                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 0 20px;
+
+            .section-sobremi {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                max-width: 1200px;
+                margin-bottom: 40px;
+                gap: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .text-sobremi {
+                    width: 45%;
+                    font-size: 15px;
+                    text-align: center;
+                    margin: 15px;
+
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        line-height: 1.7;
+                    }
+                }
+
+                .image-sobremi {
+                    width: 55%;
+                    margin-top: 20px;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                        object-fit: cover;
+                        border-radius: 10px;
+
+                        @include m.box-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
+                    }
                 }
             }
         }
     }
-}
 
-/* Responsive */
-@media (max-width: 768px) {
-    .sobremi {
-        .container-sobremi {
-            .section-sobremi {
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                padding: 0;
-                
-                .text-sobremi,
-                .image-sobremi {
+    @media (max-width: 768px) {
+        .sobremi {
+            .container-sobremi {
+                padding: 0 15px;
+
+                .section-sobremi {
+                    flex-direction: column;
+                    align-items: center;
                     width: 100%;
-                    margin: 10px 0;
+                    padding: 0;
+                    gap: 20px;
+
+                    .text-sobremi,
+                    .image-sobremi {
+                        width: 100%;
+                        margin: 10px 0;
+                    }
+
+                    .text-sobremi {
+                        order: 1;
+                    }
+
+                    .image-sobremi {
+                        order: 2;
+                    }
                 }
             }
         }

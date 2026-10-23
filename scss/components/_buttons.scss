@@ -2,30 +2,55 @@
 @use '../abstracts/mixins' as m;
 @use 'sass:color';
 
+/* Estilo base de botones */
 .btn {
     font-family: v.$font-primary;
     font-size: v.$font-size;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-decoration: none;
-}
 
-/* Estilos para los botones */
-.btn-tienda, 
-.btn-ver-mas, 
-.btn-carrito {
-    @include m.btn-style(v.$color-verde, v.$color-texto-claro);
-    &:hover {
-        background-color: color.adjust(v.$color-verde, $lightness: -10%);
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        text-decoration: none;
     }
 }
 
-/* Botón "Ver más" */
+/* Botones principales */
+.btn-tienda,
+.btn-ver-mas,
+.btn-carrito {
+    @include m.btn-style(v.$color-verde, v.$color-texto-claro);
+    font-family: v.$font-primary;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:link,
+    &:visited,
+    &:active {
+        color: v.$color-texto-claro;
+        text-decoration: none;
+    }
+
+    &:hover {
+        background-color: color.adjust(v.$color-verde, $lightness: -10%);
+        color: v.$color-texto-claro;
+        text-decoration: none;
+        transform: translateY(-2px);
+    }
+}
+
+/* Botón Ver más */
 .ver-mas-container {
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
     padding-right: 20px;
+
     @media (max-width: 768px) {
         justify-content: center;
         padding-right: 0;

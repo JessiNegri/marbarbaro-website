@@ -1,87 +1,83 @@
-@use '../abstracts/variables' as v;
-
-// Mixin para definir el box-shadow
+// Sombra
 @mixin box-shadow($value) {
     -webkit-box-shadow: $value;
     -moz-box-shadow: $value;
     box-shadow: $value;
 }
 
-// Mixin para las fuentes
+// Tipografía
 @mixin font-family($font) {
     font-family: $font, sans-serif;
 }
 
-// Mixin para definir el tamaño de fuente
 @mixin font-size($size) {
     font-size: $size;
 }
 
-// Mixin para bordes redondeados
+// Bordes redondeados
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     border-radius: $radius;
 }
 
-// Mixin para márgenes y padding
+// Espaciado
 @mixin spacing($value) {
     margin: $value;
     padding: $value;
 }
 
-// Mixin para márgenes específicos (top, right, bottom, left)
 @mixin margin($top, $right: $top, $bottom: $top, $left: $right) {
     margin: $top $right $bottom $left;
 }
 
-// Mixin para padding específico (top, right, bottom, left)
 @mixin padding($top, $right: $top, $bottom: $top, $left: $right) {
     padding: $top $right $bottom $left;
 }
 
-// Mixin para aplicar color de fondo con transparencia
+// Fondo con transparencia
 @mixin background-color-opacity($color, $opacity) {
     background-color: rgba($color, $opacity);
 }
 
-// Mixin para transición
+// Transiciones
 @mixin transition($properties, $duration, $timing-function: ease) {
     transition: $properties $duration $timing-function;
 }
 
-// Mixin para ocultar elementos en pantallas pequeñas
+// Ocultar elementos en pantallas pequeñas
 @mixin hide-on-small-screen {
     @media (max-width: 767px) {
         display: none;
     }
 }
 
-// Mixin para cambiar color en estado hover
+// Hover
 @mixin hover-color($color) {
     &:hover {
         color: $color;
     }
 }
 
-// Mixin para el tamaño de la imagen (solo para ejemplo)
+// Tamaño de imágenes
 @mixin image-size($width, $height) {
     width: $width;
     height: $height;
 }
 
-// Mixin para centrado horizontal
+// Centrado horizontal
 @mixin center-horizontal {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-// Mixin para crear un borde con color personalizado
+// Bordes
 @mixin border($color, $width: 1px, $style: solid) {
     border: $width $style $color;
 }
 
+// Secciones centradas con Flexbox
 @mixin section-flex {
     display: flex;
     flex-direction: column;
@@ -89,7 +85,9 @@
     justify-content: center;
 }
 
+// Botones
 @mixin btn-style($bg-color, $text-color) {
+    display: inline-block;
     background-color: $bg-color;
     color: $text-color;
     padding: 10px 20px;
@@ -97,4 +95,5 @@
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
 }

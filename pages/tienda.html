@@ -1,446 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Descubrí la tienda en línea de MARBARBARO. Encontrá el regalo perfecto o embelecé tu hogar con nuestras creaciones exclusivas.">
-        <meta name="keywords" content="Comprar cerámica artesanal, Piezas de cerámica hechas a mano, Tazas de cerámica únicas, Objetos de cerámica decorativos, Cerámica utilitaria artística, Tienda online cerámica artesanal, Vajilla de cerámica artesanal, Productos cerámicos hechos en Bariloche">
-        <!--Este título se ve en la pestaña-->
-        <title>MARBARBARO | Explorá mi tienda</title>
-        <!--Antes de mis estilos en css linkeo bootstrap, ya que funciona en cascada y sino me pisa los estilos-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <!--Vinculo íconos de fontawesome-->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-        <!--Vinculo el archivo css-->
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <!--El estilo de fuente que elegi para mi sitio web-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Dancing+Script&display=swap" rel="stylesheet">
-    </head>
-    
-    <body>
-        <!--Menú de navegación-->
-        <header>
-            <nav class="navbar">
-                <!--Logo y nombre de la marca-->
-                <div class="logo">
-                    <img src="../assets/img/Logo.jpeg" alt="Logo de la marca">
-                </div>
-                <!--Menu hamburguesa-->
-                <input type="checkbox" id="menu-hamburguesa" class="menu-hamburguesa">
-                <label for="menu-hamburguesa" class="menu-icon">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </label>
-                <!--Lista no ordenada de mi menú de navegación-->
-                <ul class="nav-links">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li class="submenu-container"><a href="../pages/tienda.html">Tienda</a>
-                        <!--Menu de tienda desplegable-->
-                        <ul class="submenu">
-                            <li><a href="../pages/tienda.html#ceniceros">Ceniceros</a></li>
-                            <li><a href="../pages/tienda.html#cuencos">Cuencos</a></li>
-                            <li><a href="../pages/tienda.html#deco">Deco</a></li>
-                            <li><a href="../pages/tienda.html#macetas">Macetas</a></li>
-                            <li><a href="../pages/tienda.html#mates">Mates</a></li>
-                            <li><a href="../pages/tienda.html#portasahumerios">Portasahumerios</a></li>
-                            <li><a href="../pages/tienda.html#tazas">Tazas</a></li>
-                            <li><a href="../pages/tienda.html#teteras">Teteras</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../pages/talleres.html">Talleres</a></li>
-                    <li><a href="../pages/sobremi.html">Sobre mí</a></li>
-                    <li><a href="../pages/contactoubi.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <h1>TIENDA</h1>
-            <section id="ceniceros">
-                <div class="cards-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/cenicero1.jpg" class="card-img-top" alt="cenicero1">
-                        <div class="card-body">
-                            <h5 class="card-title">Cenicero</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-        
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/cenicero2.jpg" class="card-img-top" alt="cenicero2">
-                        <div class="card-body">
-                            <h5 class="card-title">Cenicero</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/cenicero3.jpg" class="card-img-top" alt="cenicero3">
-                        <div class="card-body">
-                            <h5 class="card-title">Cenicero</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-        
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/cenicero4.jpg" class="card-img-top" alt="cenicero4">
-                        <div class="card-body">
-                            <h5 class="card-title">Cenicero</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="cuencos">
-                <div class="cards-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/bowl1.jpg" class="card-img-top" alt="bowl1">
-                        <div class="card-body">
-                            <h5 class="card-title">Cuenco</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/bowl2.jpg" class="card-img-top" alt="bowl2">
-                        <div class="card-body">
-                            <h5 class="card-title">Cuenco</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/bowl3.jpg" class="card-img-top" alt="bowl3">
-                        <div class="card-body">
-                            <h5 class="card-title">Cuenco</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/bowl4.jpg" class="card-img-top" alt="bowl4">
-                        <div class="card-body">
-                            <h5 class="card-title">Cuenco</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        
-            <section id="deco">
-                <div class="cards-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/deco1.jpg" class="card-img-top" alt="deco1">
-                        <div class="card-body">
-                            <h5 class="card-title">Deco</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/deco2.jpg" class="card-img-top" alt="deco2">
-                        <div class="card-body">
-                            <h5 class="card-title">Deco</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/deco3.jpg" class="card-img-top" alt="deco3">
-                        <div class="card-body">
-                            <h5 class="card-title">Deco</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/deco4.jpg" class="card-img-top" alt="deco4">
-                        <div class="card-body">
-                            <h5 class="card-title">Deco</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="macetas">
-                <div class="cards-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/maceta1.jpg" class="card-img-top" alt="maceta1">
-                        <div class="card-body">
-                            <h5 class="card-title">Maceta</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/maceta2.jpg" class="card-img-top" alt="maceta2">
-                        <div class="card-body">
-                            <h5 class="card-title">Maceta</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/maceta3.jpg" class="card-img-top" alt="maceta3">
-                        <div class="card-body">
-                            <h5 class="card-title">Maceta</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/maceta4.jpg" class="card-img-top" alt="maceta4">
-                        <div class="card-body">
-                            <h5 class="card-title">Maceta</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        
-            <section id="mates">
-                <div class="cards-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/mate1.jpg" class="card-img-top" alt="mate1">
-                        <div class="card-body">
-                            <h5 class="card-title">Mate</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/mate2.jpg" class="card-img-top" alt="mate2">
-                        <div class="card-body">
-                            <h5 class="card-title">Mate</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/mate3.jpg" class="card-img-top" alt="mate3">
-                        <div class="card-body">
-                            <h5 class="card-title">Mate</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/mate5.jpg" class="card-img-top" alt="mate5">
-                        <div class="card-body">
-                            <h5 class="card-title">Mate</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="portasahumerios">
-                <div class="cards-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/portasahumerio1.jpg" class="card-img-top" alt="portasahumerio1">
-                        <div class="card-body">
-                            <h5 class="card-title">Portasahumerio</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/portasahumerio2.jpg" class="card-img-top" alt="portasahumerio2">
-                        <div class="card-body">
-                            <h5 class="card-title">Portasahumerio</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/portasahumerio3.jpg" class="card-img-top" alt="portasahumerio3">
-                        <div class="card-body">
-                            <h5 class="card-title">Portasahumerio</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/portasahumerio5.jpg" class="card-img-top" alt="portasahumerio5">
-                        <div class="card-body">
-                            <h5 class="card-title">Portasahumerio</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="tazas">
-                <div class="cards-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/taza4.jpg" class="card-img-top" alt="taza4">
-                        <div class="card-body">
-                            <h5 class="card-title">Taza</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/taza5.jpg" class="card-img-top" alt="taza5">
-                        <div class="card-body">
-                            <h5 class="card-title">Taza</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/taza6.jpg" class="card-img-top" alt="taza6">
-                        <div class="card-body">
-                            <h5 class="card-title">Taza</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/taza7.jpg" class="card-img-top" alt="taza7">
-                        <div class="card-body">
-                            <h5 class="card-title">Taza</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="teteras">
-                <div class="cards-container">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/tetera2.jpg" class="card-img-top" alt="tetera2">
-                        <div class="card-body">
-                            <h5 class="card-title">Tetera</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/tetera3.jpg" class="card-img-top" alt="tetera3">
-                        <div class="card-body">
-                            <h5 class="card-title">Tetera</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/tetera6.jpg" class="card-img-top" alt="tetera6">
-                        <div class="card-body">
-                            <h5 class="card-title">Tetera</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-            
-                    <div class="card" style="width: 18rem;">
-                        <img src="../assets/img/tetera7.jpg" class="card-img-top" alt="tetera7">
-                        <div class="card-body">
-                            <h5 class="card-title">Tetera</h5>
-                            <p>$15.00</p>
-                            <a href="#carrito" class="btn-carrito">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    
-        <footer>
-            <!-- Esta sección me redirige a todas las pestañas para no volver a subir -->
-            <section class="footer-container">
-                <!-- Categorías -->
-                <div class="footer-column">
-                    <h4>Categorías</h4>
-                    <ul class="footer-links">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/tienda.html">Tienda</a></li>
-                        <li><a href="../pages/talleres.html">Talleres</a></li>
-                        <li><a href="../pages/sobremi.html">Sobre mí</a></li> 
-                        <li><a href="../pages/contactoubi.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <hr class="footer-divider">
-        
-                <!-- Métodos de pago -->
-                <div class="footer-payment">
-                    <h4>Métodos de pago</h4>
-                    <p>Aceptamos:</p>
-                    <div class="payment-icons">
-                        <i class="fa-brands fa-cc-visa"></i>
-                        <i class="fa-brands fa-cc-mastercard"></i>
-                        <i class="fa-brands fa-cc-amex"></i>
-                        <i class="fa-brands fa-paypal"></i>
-                    </div>
-                </div>
-                <hr class="footer-divider">
-        
-                <!-- Contacto -->
-                <div class="footer-contact">
-                    <h4>Contactame</h4>
-                    <div class="contact-info">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <p>+543548695432</p>
-                        <i class="fa-regular fa-envelope"></i>
-                        <p>E-mail: <a href="mailto:marbarbaro@gmail.com" class="mail-footer">marbarbaro@gmail.com</a></p>
-                    </div>
-                </div>
-                <hr class="footer-divider">
-        
-                <!-- Redes Sociales -->
-                <div class="footer-social">
-                    <h4>Síguenos en redes sociales:</h4>
-                    <div class="social-icons">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <i class="fa-brands fa-square-instagram"></i>
-                        <i class="fa-brands fa-square-pinterest"></i>
-                        <i class="fa-brands fa-square-youtube"></i>
-                    </div>
-                </div>
-                <hr class="footer-divider">
-            </section>
-            <!-- Derechos reservados -->
-            <div class="all-rights">
-                <p>&copy; MARBARBARO | 2025 - Todos los derechos reservados.</p>
-            </div>
-        </footer>
-    
-        <!--El script siempre va al final, antes de que termine body; sirve para evitar demoras en la carga del sitio-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubrí la tienda en línea de MARBARBARO. Encontrá el regalo perfecto o embellecé tu hogar con nuestras creaciones exclusivas.">
+    <meta name="keywords" content="Comprar cerámica artesanal, Piezas de cerámica hechas a mano, Tazas de cerámica únicas, Objetos de cerámica decorativos, Cerámica utilitaria artística, Tienda online cerámica artesanal, Vajilla de cerámica artesanal, Productos cerámicos hechos en Bariloche">
+    <!-- Este título se ve en la pestaña -->
+    <title>MARBARBARO | Explorá mi tienda</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
 
+<body>
+    <!-- Menú de navegación -->
+    <header>
+        <nav class="navbar" aria-label="Navegación principal">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="../index.html" aria-label="Ir al inicio">
+                    <img src="../assets/img/Logo.jpeg" alt="Logo de Mar Bárbaro">
+                </a>
+            </div>
+            <!-- Menú hamburguesa -->
+            <input type="checkbox" id="menu-hamburguesa" class="menu-hamburguesa">
+            <label for="menu-hamburguesa" class="menu-icon" aria-label="Abrir menú de navegación">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <!-- Navegación -->
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="submenu-container">
+                    <a href="tienda.html">Tienda</a>
+                    <ul class="submenu">
+                        <li><a href="#ceniceros">Ceniceros</a></li>
+                        <li><a href="#cuencos">Cuencos</a></li>
+                        <li><a href="#deco">Deco</a></li>
+                        <li><a href="#macetas">Macetas</a></li>
+                        <li><a href="#mates">Mates</a></li>
+                        <li><a href="#portasahumerios">Portasahumerios</a></li>
+                        <li><a href="#tazas">Tazas</a></li>
+                        <li><a href="#teteras">Teteras</a></li>
+                    </ul>
+                </li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="contactoubi.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="tienda">
+        <h1>TIENDA</h1>
+
+        <!-- Ceniceros -->
+        <section id="ceniceros" aria-label="Ceniceros">
+            <div class="cards-container">
+                <article class="card">
+                    <img src="../assets/img/cenicero1.jpg" class="card-img-top" alt="Cenicero artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Cenicero</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/cenicero2.jpg" class="card-img-top" alt="Cenicero artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Cenicero</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/cenicero3.jpg" class="card-img-top" alt="Cenicero artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Cenicero</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/cenicero4.jpg" class="card-img-top" alt="Cenicero artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Cenicero</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Cuencos -->
+        <section id="cuencos" aria-label="Cuencos">
+            <div class="cards-container">
+                <article class="card">
+                    <img src="../assets/img/bowl1.jpg" class="card-img-top" alt="Cuenco artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuenco</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/bowl2.jpg" class="card-img-top" alt="Cuenco artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuenco</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/bowl3.jpg" class="card-img-top" alt="Cuenco artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuenco</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/bowl4.jpg" class="card-img-top" alt="Cuenco artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Cuenco</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Deco -->
+        <section id="deco" aria-label="Decoración">
+            <div class="cards-container">
+                <article class="card">
+                    <img src="../assets/img/deco1.jpg" class="card-img-top" alt="Pieza decorativa artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Deco</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/deco2.jpg" class="card-img-top" alt="Pieza decorativa artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Deco</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/deco3.jpg" class="card-img-top" alt="Pieza decorativa artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Deco</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/deco4.jpg" class="card-img-top" alt="Pieza decorativa artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Deco</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Macetas -->
+        <section id="macetas" aria-label="Macetas">
+            <div class="cards-container">
+                <article class="card">
+                    <img src="../assets/img/maceta1.jpg" class="card-img-top" alt="Maceta artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Maceta</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/maceta2.jpg" class="card-img-top" alt="Maceta artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Maceta</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/maceta3.jpg" class="card-img-top" alt="Maceta artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Maceta</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/maceta4.jpg" class="card-img-top" alt="Maceta artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Maceta</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Mates -->
+        <section id="mates" aria-label="Mates">
+            <div class="cards-container">
+                <article class="card">
+                    <img src="../assets/img/mate1.jpg" class="card-img-top" alt="Mate artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Mate</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/mate2.jpg" class="card-img-top" alt="Mate artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Mate</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/mate3.jpg" class="card-img-top" alt="Mate artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Mate</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/mate5.jpg" class="card-img-top" alt="Mate artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Mate</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Portasahumerios -->
+        <section id="portasahumerios" aria-label="Portasahumerios">
+            <div class="cards-container">
+                <article class="card">
+                    <img src="../assets/img/portasahumerio1.jpg" class="card-img-top" alt="Portasahumerio artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Portasahumerio</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/portasahumerio2.jpg" class="card-img-top" alt="Portasahumerio artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Portasahumerio</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/portasahumerio3.jpg" class="card-img-top" alt="Portasahumerio artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Portasahumerio</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/portasahumerio5.jpg" class="card-img-top" alt="Portasahumerio artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Portasahumerio</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Tazas -->
+        <section id="tazas" aria-label="Tazas">
+            <div class="cards-container">
+                <article class="card">
+                    <img src="../assets/img/taza4.jpg" class="card-img-top" alt="Taza artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Taza</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/taza5.jpg" class="card-img-top" alt="Taza artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Taza</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/taza6.jpg" class="card-img-top" alt="Taza artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Taza</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/taza7.jpg" class="card-img-top" alt="Taza artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Taza</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Teteras -->
+        <section id="teteras" aria-label="Teteras">
+            <div class="cards-container">
+                <article class="card">
+                    <img src="../assets/img/tetera2.jpg" class="card-img-top" alt="Tetera artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Tetera</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/tetera3.jpg" class="card-img-top" alt="Tetera artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Tetera</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/tetera6.jpg" class="card-img-top" alt="Tetera artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Tetera</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="../assets/img/tetera7.jpg" class="card-img-top" alt="Tetera artesanal de cerámica">
+                    <div class="card-body">
+                        <h5 class="card-title">Tetera</h5>
+                        <p>$15.00</p>
+                        <button type="button" class="btn-carrito">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer-container">
+            <!-- Categorías -->
+            <div class="footer-column">
+                <h4>Categorías</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="talleres.html">Talleres</a></li>
+                    <li><a href="sobremi.html">Sobre mí</a></li>
+                    <li><a href="contactoubi.html">Contacto</a></li>
+                </ul>
+            </div>
+            <hr class="footer-divider">
+            <!-- Métodos de pago -->
+            <div class="footer-payment">
+                <h4>Métodos de pago</h4>
+                <p>Aceptamos:</p>
+                <div class="payment-icons" aria-label="Métodos de pago aceptados">
+                    <i class="fa-brands fa-cc-visa" aria-hidden="true"></i>
+                    <i class="fa-brands fa-cc-mastercard" aria-hidden="true"></i>
+                    <i class="fa-brands fa-cc-amex" aria-hidden="true"></i>
+                    <i class="fa-brands fa-paypal" aria-hidden="true"></i>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <!-- Contacto -->
+            <div class="footer-contact">
+                <h4>Contactame</h4>
+                <div class="contact-info">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    <p>+543548695432</p>
+                    <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                    <p>E-mail: <a href="mailto:marbarbaro@gmail.com" class="mail-footer">marbarbaro@gmail.com</a></p>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <h4>Seguinos en redes sociales:</h4>
+                <div class="social-icons" aria-label="Redes sociales de Mar Bárbaro">
+                    <i class="fa-brands fa-square-facebook" aria-hidden="true"></i>
+                    <i class="fa-brands fa-square-instagram" aria-hidden="true"></i>
+                    <i class="fa-brands fa-square-pinterest" aria-hidden="true"></i>
+                    <i class="fa-brands fa-square-youtube" aria-hidden="true"></i>
+                </div>
+            </div>
+            <hr class="footer-divider">
+        </section>
+        <div class="all-rights">
+            <p>&copy; MARBARBARO | 2025 - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

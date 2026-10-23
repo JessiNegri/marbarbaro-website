@@ -1,27 +1,37 @@
 @use '../abstracts/variables' as v;
 
+/* Tipografía general */
 body {
     font-family: v.$font-primary;
     font-size: 16px;
     line-height: 1.6;
-    color: #333;
+    color: v.$color-text;
+
     p {
         font-size: 16px;
         margin-bottom: 16px;
     }
 }
 
-header, footer { 
+/* Header y footer */
+header,
+footer {
     font-family: v.$font-secondary;
     font-size: 18px;
     font-weight: 600;
-    color: #222;
+    color: v.$color-dark;
 }
 
-h1, h2, h3, h4, h5 {
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: v.$font-secondary;
     font-weight: 700;
-    color: #111;
+    color: v.$color-dark;
     margin-top: 16px;
     margin-bottom: 8px;
 }
@@ -30,7 +40,6 @@ h1 {
     font-size: 26px;
     text-align: center;
     margin: 40px 0 20px;
-    color: #333;
 }
 
 h2 {
@@ -49,5 +58,6 @@ h5 {
     font-size: 18px;
 }
 
-
-
+h6 {
+    font-size: 16px;
+}

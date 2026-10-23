@@ -1,23 +1,31 @@
-@use '../abstracts/maps' as mp;
+@use 'maps' as mp;
 @use 'sass:map';
 
-// Variables para _typography
+// Tipografías
 $font-primary: "Lato", sans-serif;
 $font-secondary: "Roboto", sans-serif;
 
-//Variables para _generals
+// Colores generales
 $color-background: map.get(mp.$colors, background);
 $color-background-light: map.get(mp.$colors, background-light);
 $color-text: map.get(mp.$colors, text);
+$color-accent: #99bc85;
+$color-verde: #99bc85;
+$color-texto-claro: #fdfaf6;
+$color-light: #fdfaf6;
+$color-border: #ddd;
+$color-dark: #333;
+$color-gray: #777;
 
-// Variables para _carousel
+// Carousel
 $carousel-bg-light: map.get(mp.$colors, carousel-background-light);
 $carousel-text-light: map.get(mp.$colors, carousel-text-light);
 $carousel-bg-dark-tablet: map.get(mp.$colors, carousel-background-dark-tablet);
 $carousel-text-dark: map.get(mp.$colors, carousel-text-dark);
 $carousel-bg-dark-mobile: map.get(mp.$colors, carousel-background-dark-mobile);
+$carousel-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
-// Variables para _forms
+// Formularios
 $form-input-padding: 12px;
 $form-input-font-size: 14px;
 $form-submit-padding: 12px;
@@ -28,24 +36,15 @@ $form-border-color: map.get(mp.$colors, form-border);
 $submit-bg-color: map.get(mp.$colors, submit-bg);
 $submit-text-color: map.get(mp.$colors, submit-text);
 $submit-bg-hover-color: map.get(mp.$colors, submit-bg-hover);
+$form-padding: 20px;
+$form-textarea-height: 120px;
 
-// Variables para _footer
+// Footer
 $footer-background: map.get(mp.$colors, footer-background);
 $footer-text: map.get(mp.$colors, footer-text);
 $footer-accent: map.get(mp.$colors, footer-accent);
-
-// Tamaños y medidas
-$font-size: 14px;
 $footer-padding: 40px 30px;
 $footer-padding-mobile: 30px 20px;
 
-$color-accent: #99bc85;
-$color-verde: #99bc85;
-$color-texto-claro: #fdfaf6;
-$color-light: #fdfaf6;
-$color-border: #ddd;
-$color-dark: #333;
-$color-gray: #777;
-$carousel-shadow: 0 4px 10px rgba(0,0,0,0.2);
-$form-padding: 20px;
-$form-textarea-height: 120px;
+// Tamaños generales
+$font-size: 14px;

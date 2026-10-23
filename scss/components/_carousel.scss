@@ -1,9 +1,6 @@
 @use '../abstracts/variables' as v;
-@use '../abstracts/mixins' as m;
-@use '../abstracts/maps' as mp;
-@use 'sass:map';
 
-/* Estilo general del carrusel */
+/* Carrusel */
 .carousel-item {
     img {
         width: 100%;
@@ -12,9 +9,9 @@
     }
 }
 
-/* Estilos para los textos del carrusel */
+/* Texto del carrusel */
 .carousel-caption {
-    background-color: v.$carousel-bg-light; /* fondo claro por defecto */
+    background-color: v.$carousel-bg-light;
     padding: 15px;
     border-radius: 10px;
     color: v.$carousel-text-light;
@@ -22,6 +19,7 @@
     margin: 0 auto;
     text-align: center;
     box-shadow: v.$carousel-shadow;
+
     h4 {
         font-size: 24px;
         font-weight: bold;
@@ -32,52 +30,38 @@
         font-size: 16px;
         margin: 0;
     }
+}
 
-    /* Estilo para tablets */
-    @media (max-width: 1024px) {
-        background-color: v.$carousel-bg-dark-tablet; /* fondo más oscuro */
+/* Tablet */
+@media (max-width: 1024px) {
+    .carousel-caption {
+        background-color: v.$carousel-bg-dark-tablet;
         color: v.$carousel-text-dark;
+
         h4 {
             font-size: 20px;
         }
+
         p {
             font-size: 14px;
-        }   
-    } 
-
-  /* Estilo para móviles */
-    @media (max-width: 768px) {
-        background-color: v.$carousel-bg-dark-mobile; /* aún más contraste */
-        padding: 10px;
-        max-width: 90%;
-        color: v.$carousel-text-dark;
-        h4 {
-            font-size: 18px;
-        }
-        p {
-            font-size: 13px;
         }
     }
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+    .carousel-caption {
+        background-color: v.$carousel-bg-dark-mobile;
+        color: v.$carousel-text-dark;
+        padding: 10px;
+        max-width: 90%;
 
-/* Ajustes al carrusel */
-/* Estilo general del carrusel */
-.carousel-item 
-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+        h4 {
+            font-size: 18px;
+        }
 
-/* Estilos generales para los textos */
-.carousel-caption {
-    background-color: rgba(255, 255, 255, 0.6); /* fondo claro por defecto */
-    padding: 15px;
-    border-radius: 10px;
-    color: #333;
-    max-width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        p {
+            font-size: 13px;
+        }
+    }
 }

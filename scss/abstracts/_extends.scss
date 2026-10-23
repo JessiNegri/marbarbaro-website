@@ -1,39 +1,27 @@
-@use '../abstracts/variables' as v;
+@use 'variables' as v;
 
-//Extends para _forms
+// Estilo reutilizable para inputs y textarea
 %form-input-style {
     width: 100%;
     padding: v.$form-input-padding;
     font-size: v.$form-input-font-size;
-    border-radius: 6px;
     border: 1px solid v.$form-border-color;
+    border-radius: v.$form-border-radius;
+    font-family: v.$font-primary;
 }
 
+// Estilo reutilizable para el botón submit
 %submit-button-style {
     background-color: v.$submit-bg-color;
     color: v.$submit-text-color;
     border: none;
     padding: v.$form-submit-padding;
     font-size: v.$form-submit-font-size;
+    font-family: v.$font-primary;
     cursor: pointer;
-    border-radius: 6px;
+    border-radius: v.$form-border-radius;
 
     &:hover {
         background-color: v.$submit-bg-hover-color;
     }
-}
-
-%form-input-style {
-    padding: v.$form-input-padding;
-    font-size: v.$font-size;
-    border-radius: v.$form-border-radius;
-}
-
-// Placeholder para el estilo del botón de envío
-%submit-button-style {
-    background-color: v.$color-accent;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: v.$color-text;
-    font-size: v.$font-size;
 }

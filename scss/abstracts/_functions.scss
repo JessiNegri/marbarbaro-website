@@ -1,16 +1,17 @@
-@use '../abstracts/variables' as v;
+@use 'sass:math';
+@use 'sass:color';
 
-//Function para _generals
+// Convierte píxeles a rem
 @function rem($px) {
-    @return ($px / 16) * 1rem;
+    @return math.div($px, 16) * 1rem;
 }
 
-//Functions para _forms
-@function rgba-color($color, $opacity) {
-    @return rgba($color, $opacity);
+// Devuelve un color con transparencia
+@function rgba-color($color-value, $opacity) {
+    @return rgba($color-value, $opacity);
 }
 
-//Functions para _footer
-@function lighten($color, $amount) {
-    @return lighten($color, $amount);
+// Aclara un color
+@function lighten-color($color-value, $amount) {
+    @return color.adjust($color-value, $lightness: $amount);
 }
